@@ -1,0 +1,92 @@
+body:not(section) {
+	background-color: #F8F9FA;
+}
+
+.task:hover {
+	background-color: #EDEFF0;
+}
+
+.summary-row>button:active,
+.summary-row>button:focus,
+#toolbar>button:active,
+#toolbar>button:focus {
+	outline: none !important;
+}
+
+.task {
+	color: #2F2F2F;
+	padding: 10px 8px;
+	border-bottom: 2px solid #DBDEE4;
+}
+
+.task:last-child {
+	border-bottom: 0px;
+}
+
+.progress-canvas {
+	background-color: #DBDAD5;
+	filter: brightness(1.1) contrast(0.9);
+	border: 1px solid #A3A08F;
+	border-radius: 3px;
+}
+
+.summary-row {
+	margin-bottom: 4px;
+}
+
+.summary-row>button {
+	color: #6E7C8F;
+	padding: 3px;
+	margin-left: 3px;
+	border-radius: 2px;
+}
+
+button.task-action:hover {
+	color: #FFFFFF;
+}
+
+.summary-row>button:not([disabled]):hover {
+	background-color: #EDEFF0;
+	color: #5D97F5;
+}
+
+button.task-action:last-child {
+	color: #FF7570;
+}
+
+button.task-action:last-child:hover {
+	color: #FF524D;
+}
+
+#toolbar {
+	background: rgb(104,118,138);
+	background: linear-gradient(0deg, rgba(93,106,123,1) 0%, rgba(104,118,138,1) 35%, rgba(117,131,151,1) 100%);
+}
+
+#toolbar>button {
+	color: #EBEBEB;
+}
+
+#toolbar>button[disabled] {
+	color: #B3B3BE;
+}
+
+.average-speed {
+	color: #9E722B;
+	font-weight: bold;
+}
+
+.task[data-state='downloading'] .total-size,
+.task[data-state='paused'] .total-size {
+	color: #B02623;
+}
+
+.task[data-state='downloading'] .current-size,
+.task[data-state='paused'] .current-size {
+	color: #177519;
+}
+
+.total-size:after,
+.current-size:after {
+	color: #2F2F2F;
+}
